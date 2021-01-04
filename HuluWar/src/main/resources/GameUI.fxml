@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.UIController" prefHeight="600.0" prefWidth="900.0">
+    <children>
+        <Canvas fx:id="canvas" height="551" width="881"></Canvas>
+        <Label fx:id="label1" AnchorPane.leftAnchor="180" AnchorPane.topAnchor="450" text="请先选择阵营，然后按下空格键开始游戏或L键进行战斗回放" style="-fx-font-family: 'KaiTi';-fx-font-size: 20;"></Label>
+        <Button fx:id="button1" text="Hulu" prefWidth="70" prefHeight="30" AnchorPane.leftAnchor="200" AnchorPane.topAnchor="400" onAction="#chooseHulu"></Button>
+        <Button fx:id="button2" text="Snake" prefWidth="70" prefHeight="30" AnchorPane.leftAnchor="600" AnchorPane.topAnchor="400" onAction="#chooseSnake"></Button>
+        <Label fx:id="label2"  AnchorPane.leftAnchor="150" AnchorPane.topAnchor="500" text="注意：选阵营前先开启服务器，并且两个玩家不要重复开启服务器！" style="-fx-font-family: 'KaiTi';-fx-font-size: 20;"></Label>
+        <Button fx:id="button3" text="打开服务器" prefWidth="100" prefHeight="30" AnchorPane.leftAnchor="390" AnchorPane.topAnchor="400" onAction="#openSever"></Button>
+
+    </children>
+</AnchorPane>
